@@ -1,0 +1,2 @@
+# EntityFrameworkAzureSqlAadAccessToken
+Init
