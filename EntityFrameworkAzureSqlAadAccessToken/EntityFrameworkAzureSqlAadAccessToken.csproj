@@ -101,6 +101,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="PrivateAppSettings.config" />
+    <None Include="PrivateAppSettings.template.config" />
+    <Content Include="PrivateConnectionStrings.config" />
+    <None Include="PrivateConnectionStrings.template.config" />
     <None Include="Properties\PublishProfiles\EntityFrameworkAzureSqlAadAccessToken - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\EntityFrameworkAzureSqlAadAccessToken - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
