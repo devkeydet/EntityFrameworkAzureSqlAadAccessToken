@@ -5,12 +5,9 @@ This is a sample ASP.NET MVC 5 web app, capable of being deployed to Azure App S
 https://docs.microsoft.com/en-us/azure/sql-database/sql-database-aad-authentication
 
 Specifically, it uses the token-based authentication approach describe in the article above.  This sample is based on both the guidance in the article above and this sample:
-…and concepts in this sample code:
 https://blogs.msdn.microsoft.com/sqlsecurity/2016/02/09/token-based-authentication-support-for-azure-sql-db-using-azure-ad-auth/
 
-The key thing I focused on in the sample was to ensure the least amount of impact to an existing Etity Framework 6 codebase.  
-
-The BlogContext class encapsulates everything necessary to get the access token from Azure AD and attach it to the underlying SqlConnection before the connection is opened.  It’s done in such a way that any code that theoretically already used BlogContext would just continue to work without modification.  The TokenHelper class does the work of getting the token from Azure AD based on values in the config file.  No username/password used.
+The key thing I focused on in the sample was to ensure the least amount of impact to an existing Etity Framework 6 codebase.  The BlogContext class encapsulates everything necessary to get the access token from Azure AD and attach it to the underlying SqlConnection before the connection is opened.  It’s done in such a way that any code that theoretically already used BlogContext would just continue to work without modification.  The TokenHelper class does the work of getting the token from Azure AD based on values in the config file.  No username/password used.
 
 ## Geting Started
 
