@@ -10,7 +10,7 @@ namespace EntityFrameworkAzureSqlAadAccessToken
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            // Call get token to put it in the in memory cache
+            // Call get token to put it in the in-memory cache
             TokenHelper.GetAccessToken();
         }
     }
